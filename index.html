@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Neel Chandran</title>
+    <link rel="icon" href="file.svg" type="image/x-icon" sizes="64x64">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="mainpage">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Neel Chandran</a>
+            </div>
+            <ul class="menu">
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Background.html">Background</a></li>
+                <li><a href="Contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <div class="footer">
+        <div class="footers">
+            <p id="line1" class="typewriter hidden">
+                I'm studying Engineering Physics, with a minor in EECS. I am fascinated by Quantum Computers, Statistical Mechanics, and Machine Learning.
+            </p>
+            <br>
+            <a class="button" id="button1" href="Background.html">Find out more about me!</a>
+        </div>
+
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQG5erRMWk6BeA/profile-displayphoto-shrink_400_400/B56Zao4qGbGkAk-/0/1746590147880?e=1753920000&v=beta&t=2DIDZk3ZO983ORSSFzw8tnMtX519ppV9j9A2PyrYOl0" alt="">
+                    <div class="x-border"></div>
+        
+        <div class="footers" id="right">
+            <p id="line2" class="typewriter hidden">
+                I've made 2048, Plants vs Zombies, a project on semantic graph analysis, my own mini game with a random seed system for world generation and more.
+            </p>
+            <br>
+            <a class="button" id ="button2" href="Background.html">See what I've made!</a>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="pfp">
+        <h2>Welcome to my page!</h2>
+    </div>
+
+    <script>
+        function typeLine(elementId, duration, callback) {
+            const el = document.getElementById(elementId);
+            el.classList.remove("hidden");
+            const textLength = el.textContent.length;
+            el.style.width = "0ch";
+            el.style.visibility = "visible";
+            el.style.animation = `typing ${duration}s steps(${textLength}, end) forwards, blink 0.7s step-end infinite`;
+
+            setTimeout(() => {
+                if (callback) callback();
+            }, duration * 1000);
+        }
+
+        typeLine("line1", 3, () => {
+        typeLine("line2", 4, () => {
+      document.getElementById("button1").classList.add("show");
+      document.getElementById("button2").classList.add("show");
+    });
+  });
+</script>
+    </script>
+</body>
+</html>
