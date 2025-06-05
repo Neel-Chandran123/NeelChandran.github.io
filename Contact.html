@@ -19,30 +19,39 @@
         </nav>
     </header>
     <h1>Here are some ways to get in touch with me! I love to chat about anything and everything</h1>
-    <section>
-    <h1>Connect with me!</h1>
-        <ul>
-            <h3><li><a href="https://www.linkedin.com/in/neel-chandran-a57714220/">Linkedin</a></li></h3>
-            <h3><li><a href="mailto:neel.chandran@berkeley.edu">Email</a></li></h3>
-        </ul>
+    <div class = "Contact-Form">
+    <section >
+   
+    <div class = "connection-links">
+        <div>
+        <h3><a href="https://www.linkedin.com/in/neel-chandran-a57714220/">Linkedin</a></h3>
+        </div>
+        <div>
+            <h3><a href="mailto:neel.chandran@berkeley.edu">Email</a></h3>
+        </div>
+        </div>
     </section>
     <section>
         <form id = "Message Form" action="https://formspree.io/f/mjkrvvrl" method="POST">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname">
+            <div id ="Firstname">
+            <input type="text" placeholder="First Name..">
+            </div>
             <br>
-            <label for="fname">Last Name</label>
-            <input type="text" id="lname" name="lname">
+            <div>
+            <input type="text" placeholder="Last Name..">
+            </div>
             <br>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <div>
+            <input type="email" placeholder="Email..">
+            </div>
             <br>
-            <label for="message">Message</label>
-            <input type="text" id="message" name="message">
+            <div>
+              <input type="text" placeholder="Message..">
+              </div>
             <br>
             <button type="submit">Send Message</button>
         </form>
     </section>
-    
+    </div>
 </body>
 </html>
